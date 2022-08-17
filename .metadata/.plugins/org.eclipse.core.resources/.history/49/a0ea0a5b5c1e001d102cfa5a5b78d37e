@@ -1,0 +1,18 @@
+package co.grandcircus.WeatherProxy;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+@Service
+public class WeatherService {
+	private RestTemplate restTemplate = new RestTemplate();
+	
+	public WeatherPointsResponse getPointResponse(String lat, String lon) {
+		String url = "https://api.weather.gov/points/{0},{1}";
+		WeatherPointsResponse response = restTemplate.getForObject(url, WeatherPointsResponse.class, lat, lon);
+		return response;
+	}
+	public String getForecastURL(String lat, String lon) {
+		return getPointsResponse(lat, lon)
+	}
+}

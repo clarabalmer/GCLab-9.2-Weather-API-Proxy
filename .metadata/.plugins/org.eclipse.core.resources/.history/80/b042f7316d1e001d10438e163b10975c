@@ -1,0 +1,15 @@
+package co.grandcircus.WeatherProxy;
+
+import java.util.ArrayList;
+
+public class GridProp {
+	private ArrayList<Period> periods;
+
+	public ArrayList<Period> getPeriods() {
+		return periods;
+	}
+
+	public void setPeriods(ArrayList<Period> periods) {
+		this.periods = periods;
+	}
+}

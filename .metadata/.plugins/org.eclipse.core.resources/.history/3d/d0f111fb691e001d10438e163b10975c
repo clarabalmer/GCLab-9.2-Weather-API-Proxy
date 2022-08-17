@@ -1,0 +1,13 @@
+package co.grandcircus.WeatherProxy;
+
+public class GridProp {
+	private Period[] periods;
+
+	public Period[] getPeriods() {
+		return periods;
+	}
+
+	public void setPeriods(Period[] periods) {
+		this.periods = periods;
+	}
+}

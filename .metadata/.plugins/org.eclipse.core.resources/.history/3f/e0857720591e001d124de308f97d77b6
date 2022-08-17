@@ -1,0 +1,10 @@
+package co.grandcircus.WeatherProxy;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class WeatherResponse {
+	@GetMapping("/points")
+	public String getPoints() {
+		
+	}
+}

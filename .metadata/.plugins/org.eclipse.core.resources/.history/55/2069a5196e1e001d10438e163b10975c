@@ -1,0 +1,13 @@
+package co.grandcircus.WeatherProxy;
+
+public class ProxyPeriod extends Period {
+	private int temperatureCelsius;
+
+	public int getTemperatureCelsius() {
+		return temperatureCelsius;
+	}
+
+	public void setTemperatureCelsius(int temperatureCelsius) {
+		this.temperatureCelsius = temperatureCelsius;
+	}
+}

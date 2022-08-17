@@ -1,0 +1,13 @@
+package co.grandcircus.WeatherProxy;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+@Service
+public class WeatherService {
+	private RestTemplate restTemplate = new RestTemplate();
+	
+	public String getForecastURL(String lat, String lon) {
+		
+	}
+}

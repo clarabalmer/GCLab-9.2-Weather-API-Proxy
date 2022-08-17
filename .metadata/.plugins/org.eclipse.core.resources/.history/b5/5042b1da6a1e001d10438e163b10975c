@@ -1,0 +1,31 @@
+package co.grandcircus.WeatherProxy;
+
+public class Period {
+	private int number;
+	private String name;
+	private String startTime;
+	private String endTime;
+	private int temperature;
+	private String temperatureUnit;
+	private String windSpeed;
+	private String windDirection;
+	
+	public int getNumber() {
+		return number;
+	}
+	public void setNumber(int number) {
+		this.number = number;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getTemperature() {
+		return temperature;
+	}
+	public void setTemperature(int temperature) {
+		this.temperature = temperature;
+	}
+}

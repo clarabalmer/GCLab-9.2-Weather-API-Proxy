@@ -1,0 +1,8 @@
+package co.grandcircus.WeatherProxy;
+
+import java.util.List;
+
+public class ProxyResponse {
+	private List<ProxyPeriod> periods;
+	private Stats stats;
+}

@@ -1,0 +1,28 @@
+package co.grandcircus.WeatherProxy;
+
+public class ProxyPeriod extends Period {
+	private int temperatureCelsius;
+	
+	
+
+	public ProxyPeriod(Period period) {
+		super();
+		this.number = period.number;
+		this.name = period.name;
+		this.startTime = period.startTime;
+		this.endTime = period.endTime;
+		this.temperature = period.temperature;
+		this.temperatureUnit = period.temperatureUnit;
+		this.windSpeed = period.windSpeed;
+		this.windDirection = period.windDirection;
+		this.temperatureCelsius = ((period.temperature - 32) * 5 / 9);
+	}
+
+	public int getTemperatureCelsius() {
+		return temperatureCelsius;
+	}
+
+	public void setTemperatureCelsius(int temperatureCelsius) {
+		this.temperatureCelsius = temperatureCelsius;
+	}
+}

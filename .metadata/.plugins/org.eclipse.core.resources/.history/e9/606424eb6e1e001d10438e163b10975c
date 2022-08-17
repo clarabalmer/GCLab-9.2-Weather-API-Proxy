@@ -1,0 +1,21 @@
+package co.grandcircus.WeatherProxy;
+
+public class ProxyPeriod extends Period {
+	private int temperatureCelsius;
+	
+	
+
+	public ProxyPeriod(Period period) {
+		super();
+		this.number = period.getNumber();
+		setTemperatureCelsius((super.getTemperature() - 32) * 5 / 9);
+	}
+
+	public int getTemperatureCelsius() {
+		return temperatureCelsius;
+	}
+
+	public void setTemperatureCelsius(int temperatureCelsius) {
+		this.temperatureCelsius = temperatureCelsius;
+	}
+}
